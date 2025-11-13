@@ -1,0 +1,47 @@
+#include "menuprincipal.h"
+#include "sistemaMensagem.h"
+#include <iostream>
+using namespace std;
+
+// Aqui você pode incluir os headers dos sistemas (Mensagens, Mutantes, etc.)
+// Exemplo:
+// #include "sistemaMensagem.h"
+// #include "sistemaMutantes.h"
+// ...
+
+// Funções simuladas (submenus) — substitua pelas reais
+void sistemaMutantes() { cout << "Executando Sistema de Mutantes...\n"; }
+void sistemaCriaturas() { cout << "Executando Sistema de Criaturas...\n"; }
+void sistemaPagamentos() { cout << "Executando Sistema de Pagamentos...\n"; }
+void sistemaRPG() { cout << "Executando Sistema de RPG...\n"; }
+
+void exibeMenuPrincipal() {
+    int opcao;
+    
+    do {
+        system("cls");
+        cout << "\n===== MENU PRINCIPAL =====\n";
+        cout << "1. Sistema de Mensagens\n";
+        cout << "2. X-Men - Mutantes\n";
+        cout << "3. Animais Fantásticos\n";
+        cout << "4. Pagamentos\n";
+        cout << "5. RPG\n";
+        cout << "0. Sair\n";
+        cout << "Escolha uma opção: ";
+        cin >> opcao;
+
+        switch (opcao) {
+            case 1: exibeMensagem(); 
+            system("pause");
+            break;
+            case 2: sistemaMutantes(); break;
+            case 3: sistemaCriaturas(); break;
+            case 4: sistemaPagamentos(); break;
+            case 5: sistemaRPG(); break;
+            case 0: 
+            system("cls");
+            cout << "Saindo...\n"; break;
+            default: cout << "Opção inválida!\n"; break;
+        }
+    } while (opcao != 0);
+}
