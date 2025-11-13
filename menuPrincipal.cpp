@@ -1,5 +1,6 @@
 #include "menuprincipal.h"
 #include "sistemaMensagem.h"
+#include "sistemaMutante.h"
 #include <iostream>
 using namespace std;
 
@@ -9,8 +10,7 @@ using namespace std;
 // #include "sistemaMutantes.h"
 // ...
 
-// Funções simuladas (submenus) — substitua pelas reais
-void sistemaMutantes() { cout << "Executando Sistema de Mutantes...\n"; }
+
 void sistemaCriaturas() { cout << "Executando Sistema de Criaturas...\n"; }
 void sistemaPagamentos() { cout << "Executando Sistema de Pagamentos...\n"; }
 void sistemaRPG() { cout << "Executando Sistema de RPG...\n"; }
@@ -34,7 +34,9 @@ void exibeMenuPrincipal() {
             case 1: exibeMensagem(); 
             system("pause");
             break;
-            case 2: sistemaMutantes(); break;
+            case 2: sistemaMutante();
+            system("pause");
+            break;
             case 3: sistemaCriaturas(); break;
             case 4: sistemaPagamentos(); break;
             case 5: sistemaRPG(); break;
