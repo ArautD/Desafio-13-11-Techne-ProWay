@@ -14,7 +14,7 @@ void Noturno::usarPoder() const{
 }
 void sistemaMutante(){
     system("cls");
-    std::cout << "Programa de Envio de mensagens" << std::endl;
+    std::cout << "Programa de Venha a mim meus X-MEN" << std::endl;
     std::cout << "------------------------------------------------" << std::endl;
     
     Mutante* equipe[3] = {new Wolverine (),new JeanGrey (),new Noturno ()
