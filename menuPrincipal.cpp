@@ -1,8 +1,6 @@
 #include "menuprincipal.h"
-#include "sistemaMensagem.h"
-#include "sistemaMutante.h"
-#include "criaturaMagica.h"
 #include <iostream>
+
 using namespace std;
 
 // Aqui você pode incluir os headers dos sistemas (Mensagens, Mutantes, etc.)
@@ -11,8 +9,6 @@ using namespace std;
 // #include "sistemaMutantes.h"
 // ...
 
-
-void sistemaPagamentos() { cout << "Executando Sistema de Pagamentos...\n"; }
 void sistemaRPG() { cout << "Executando Sistema de RPG...\n"; }
 
 void exibeMenuPrincipal() {
@@ -40,8 +36,12 @@ void exibeMenuPrincipal() {
             case 3: sistemaCriaturas(); 
             system("pause");
             break;
-            case 4: sistemaPagamentos(); break;
-            case 5: sistemaRPG(); break;
+            case 4: sistemaFinanceiro();
+            system("pause");
+            break;
+            case 5: sistemaRPG();
+            system("pause");
+            break;
             case 0: 
             system("cls");
             cout << "Saindo...\n"; break;
