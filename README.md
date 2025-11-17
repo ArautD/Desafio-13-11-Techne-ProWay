@@ -102,7 +102,5 @@ Cada opção chama o respectivo subsistema:
 
 ---
 
-## 🧑‍💻 Autores
-
 Projeto desenvolvido como parte do **Desafio de C++ da Proway/Techne**.  
 Exercício voltado para prática de **POO, modularização e abstração em C++**.
