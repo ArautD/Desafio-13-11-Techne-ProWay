@@ -5,6 +5,7 @@
 #include "sistemaMutante.h"
 #include "criaturaMagica.h"
 #include "sistemaFinanceiro.h"
+#include "habilidadeRPG.h"
 
 using namespace std;
 

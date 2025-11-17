@@ -39,7 +39,7 @@ void exibeMenuPrincipal() {
             case 4: sistemaFinanceiro();
             system("pause");
             break;
-            case 5: sistemaRPG();
+            case 5: atkDnd();
             system("pause");
             break;
             case 0: 
